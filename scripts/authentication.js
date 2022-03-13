@@ -1,5 +1,8 @@
 // Initialize the FirebaseUI Widget using Firebase.
 var ui = new firebaseui.auth.AuthUI(firebase.auth());
+let role = document.getElementById("role");
+
+
 
 var uiConfig = {
   callbacks: {
@@ -9,9 +12,10 @@ var uiConfig = {
       // or whether we leave that to developer to handle.
       var user = authResult.user;
       if (authResult.additionalUserInfo.isNewUser) {
-        db.collection("users").doc(user.uid).set({
+        db.collection(role.innerText).doc(user.uid).set({
           name: user.displayName,
           email: user.email,
+          role: role.innerText,
         }).then(function () {
           console.log("New user added to firestore");
           window.location.assign("main.html");
