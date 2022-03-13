@@ -27,17 +27,33 @@
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.8.1/firebase-ui-auth.css" />
 
 
-    <link type="tex/css" rel="stylesheet" href="./styles/volunteer_settings.css">
+    <link type="text/css" rel="stylesheet" href="./styles/volunteer_settings.css">
 
 </head>
 
 <body>
+    <div id="top-bar">
+        <div id="written-info">
+            <h4 id="name">Name placeholder</h4>
+            <p id="name">email placeholder</p>
+        </div>
+
+        <div id="switch">
+            <div class="form-check form-switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Availability</label>
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+            </div>
+        </div>
+        
+
+        <img id="profile-pic" src="./images/placeholder.png">
+    </div>
 
     <!--Should include a common header with information pulled from firebase-->
 
     <div id="container">
 
-        <div id="task-checkbox">
+        <div class="settings-input">
             <h4>Tasks I am able to assist with: </h4>
 
             <div class="form-check">
@@ -84,13 +100,13 @@
 
         </div>
 
-        <div id="location-slider">
+        <div class="settings-input">
             <h4>Location (km)</h4>
             <input type="range" class="form-range" min="2" max="20+" step="2" id="customRange3">
 
         </div>
 
-        <div id="languages-selector">
+        <div class="settings-input">
             <label for="exampleDataList" class="form-label">Languages spoken:</label>
             <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
             <datalist id="datalistOptions">
@@ -100,8 +116,15 @@
                 <option value="Korean">
                 <option value="Tagalog">
                 <option value="Cantonese">
-                    <option value="Punjabi"></option>
+                <option value="Punjabi"></option>
             </datalist>
+        </div>
+
+        <div class="settings-input">
+            <h4>Change profile photo</h4>
+            <div class="mb-3">
+                <input class="form-control" type="file" id="formFile">
+            </div>
         </div>
 
     </div>
