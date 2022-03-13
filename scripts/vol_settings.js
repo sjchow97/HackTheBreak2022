@@ -40,13 +40,4 @@ var slider = new Slider("location");
 slider.on("slide", function(sliderValue) {
     document.getElementById("sliderVal").textContent = sliderValue;
 });
-<<<<<<< HEAD
 */
-=======
-
-console.log(slider);
-
-function editUserInfo() {
-
-}
->>>>>>> 108694091fd04696e227f029916973de814d3138
