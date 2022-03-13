@@ -1,5 +1,7 @@
-function loadSkeleton(){
-    console.log($('#navbarPlaceholder').load('./text/nav.html'));
+async function loadSkeleton(){
+    console.log($('#navbarPlaceholder').load('./text/nav.html'))
+
 }
 
 loadSkeleton();
+
