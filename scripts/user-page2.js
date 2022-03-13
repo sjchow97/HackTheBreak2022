@@ -14,4 +14,9 @@ eventList.get()
             container.appendChild(volunteerBar);
         }
 
+        let name = document.querySelectorAll("#volunteer-name");
+        console.log(name[0].innerText);
+        //let name1 = namebox[0].getElementById("volunteer-name");
+        //console.log(name1.innerText);
+
     })
