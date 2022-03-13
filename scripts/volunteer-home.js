@@ -24,3 +24,19 @@
 //         })
 // }
 // displayStory(user);
+
+let goSettingsButton = document.getElementById("go-to-settings");
+
+goSettingsButton.addEventListener("click", () => {
+    let url = document.location.href;
+    console.log(url);
+
+    let uid = url.split("?").pop();
+    console.log(uid);
+
+    newUrl = url.replace("volunteer-home.html?" + uid, "volunteer-settings.html?" + uid);
+    console.log(newUrl);
+
+    document.location.href = newUrl;
+
+})

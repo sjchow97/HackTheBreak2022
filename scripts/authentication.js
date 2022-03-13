@@ -18,12 +18,13 @@ var uiConfig = {
           role: role.innerText,
         }).then(function () {
           console.log("New user added to firestore");
-          window.location.assign(role.innerText + "-home.html");
+          window.location.assign(role.innerText + "-home.html?" + user.uid);
         })
           .catch(function (error) {
             console.log("Error adding new user: " + error);
           });
       } else {
+        window.location.assign(role.innerText + "-home.html?" + user.uid);
         return true;
       }
       return false;
@@ -38,7 +39,7 @@ var uiConfig = {
   },
   // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
   signInFlow: 'popup',
-  signInSuccessUrl: role.innerText +'-home.html',
+  //signInSuccessUrl: role.innerText +'-home.html?',
   signInOptions: [
     // Leave the lines as is for the providers you want to offer your users.
     // firebase.auth.GoogleAuthProvider.PROVIDER_ID,

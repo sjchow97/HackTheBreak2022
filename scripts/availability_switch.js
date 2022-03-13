@@ -1,11 +1,24 @@
 
-let switchToggle = document.getElementById("flexSwitchCheckDefault");
+let availSwitch = document.getElementById("availability-switch");
+let UID = document.location.href.split("?").pop();
 
-switchToggle.addEventListener("click", (e)=> {
+availSwitch.addEventListener("click", ()=> {
 
-    console.log(switchToggle.checked);
+    db.collection("volunteer").doc(UID).update({
+		availability: availSwitch.checked,
+
+	})
+
+    if(availSwitch.checked) {
+        alert("your availability has been switched on.");
+    } else {
+        alert("your availability has been switched off.");
+    }
+
+
 })
 
+/*
 function changeAvailabilityState(){
     var availabilityState = switchToggle.checked;
     
@@ -18,3 +31,4 @@ function changeAvailabilityState(){
 }
 
 changeAvailabilityState();
+*/
