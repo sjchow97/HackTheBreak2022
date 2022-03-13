@@ -1,3 +1,18 @@
-.btn btn-primary {
-    background-color: navy; !important;
+#logo {
+    display: flex;
+    max-width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.btn {
+    background-color: #003168 !important;
+}
+
+#nextbutton{
+    margin-top: 10%;
+}
+
+.btn btn-dark btn-lg {
+    background-color: #68BED9 !important;
 }
