@@ -12,8 +12,6 @@ var uiConfig = {
         db.collection("users").doc(user.uid).set({
           name: user.displayName,
           email: user.email,
-          athlete: user.atheletes,
-          event: user.events
         }).then(function () {
           console.log("New user added to firestore");
           window.location.assign("main.html");
