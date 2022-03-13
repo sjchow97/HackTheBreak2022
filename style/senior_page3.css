@@ -16,7 +16,6 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.4em;
-
 }
 
 #volunteer-profile-picture {
@@ -26,7 +25,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 #profile-circle {
@@ -41,7 +39,6 @@ body {
     background-color: lightgrey;
     padding-top: 20px;
     padding-bottom: 20px;
-
 }
 
 #volunteer-bio {
@@ -57,7 +54,6 @@ body {
 #volunteer-languages {
     display: flex;
     font-size: 1.2em;
-
 }
 
 #volunteer-languages li {
