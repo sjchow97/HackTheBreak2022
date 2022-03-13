@@ -93,17 +93,50 @@
         </div>
 
         <div class="settings-input">
-            <label for="exampleDataList" class="form-label">Languages spoken:</label>
-            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-            <datalist id="datalistOptions">
-                <option value="English"></option>
-                <option value="Mandarin">
-                <option value="Japanese">
-                <option value="Korean">
-                <option value="Tagalog">
-                <option value="Cantonese">
-                <option value="Punjabi"></option>
-            </datalist>
+            <h4>Languages spoken:</h4>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    English
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Cantonese
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Mandarin
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Korean
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Tagalog
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Punjabi
+                </label>
+            </div>
+
         </div>
 
         <div class="settings-input">
@@ -119,12 +152,11 @@
 
     <div class="settings-input">
         <div class="text-center">
-<button type="button" class="btn btn-info" onclick="editUserInfo()">Submit</button>
+            <button type="button" class="btn btn-primary btn-lg" onclick="editUserInfo()">Submit</button>
         </div>
-        
     </div>
 
-    
+
     <script src="./scripts/firebaseAPI_FigmaLords.js"></script>
     <script src="./scripts/authentication.js"></script>
     <script src="./scripts/skeleton.js"></script>

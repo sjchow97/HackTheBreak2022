@@ -16,10 +16,15 @@
  
  .namebox {
      display: grid;
-     grid-template-columns: 40% 60%;
-     background-color: darkgray;
+     grid-template-columns: 30% 70%;
+     background-color: white;
+     border-top:solid;
+     border-bottom: solid;
+     border-width:thin;
+     border-color: lightgrey;
      padding-top: 5%;
      padding-bottom: 5%;
+
  }
  
  #heading {
@@ -51,3 +56,39 @@
  #details {
      grid-template-rows: 50% 50%;
  }
+
+ #heading{
+     padding-top: 2.5%;
+     padding-bottom: 2.5%;
+     background-color: #68BED9;
+ }
+
+ #heading-p{
+     margin:auto;
+ }
+
+ .namebox{
+     margin-top: 1.75%;
+     margin-bottom: 1.75%;
+ }
+
+ .profile-circle{
+     margin:auto;
+ }
+
+ .btn{
+     background-color:#003168 !important;
+     width: 25% !important;
+     font: 125% !important;
+     font-weight:bold !important;
+ }
+
+ #details{
+    padding-left: 5%;
+ }
+
+ #volunteer-name{
+     font-size: 175%;
+     font-weight: bold;
+ }
+ 
