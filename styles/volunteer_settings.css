@@ -1,7 +1,7 @@
 #top-bar{
-    background-color: lightgray;
+    background-color: #68BED9;
     display:grid;
-    grid-template-columns: 55% 25% 20%;
+    grid-template-columns: 45% 35% 20%;
     
 }
 
