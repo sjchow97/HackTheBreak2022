@@ -1,5 +1,3 @@
-
-
 // Your web app's Firebase configuration
 var firebaseConfig = {
     apiKey: "AIzaSyDc0AZ3a10csp8tbYhNCM0XwaWy8zpEsrY",

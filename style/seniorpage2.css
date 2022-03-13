@@ -1,0 +1,53 @@
+ * {
+     margin: 0;
+     list-style: none;
+ }
+ 
+ body {
+     width: 100%;
+     height: 100%;
+ }
+ 
+ #container {
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+ }
+ 
+ .namebox {
+     display: grid;
+     grid-template-columns: 40% 60%;
+     grid-template-rows: 10% 40% 40% 10%;
+     background-color: darkgray;
+ }
+ 
+ #heading {
+     text-align: center;
+     font-size: 30px;
+     background-color: lightgrey;
+ }
+ 
+ .profile-circle {
+     height: 75px;
+     width: 75px;
+     background-color: darkblue;
+     border-radius: 125px;
+     grid-row: 2 / 3;
+     justify-self: center;
+ }
+ 
+ .name {
+     grid-row: 2 / 3;
+     grid-column: 2 / 3;
+ }
+ 
+ .call-box {
+     grid-row: 3 / 4;
+     grid-column: 2 / 3;
+     background-color: rgb(50, 169, 238);
+ }
+ 
+ .call-button {
+     background-color: rgb(50, 169, 238);
+     text-align: center;
+ }
